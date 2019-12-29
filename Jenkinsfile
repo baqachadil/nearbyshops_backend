@@ -12,6 +12,10 @@ node {
 
         app = docker.build("baqachadil/nearbyshops")
     }
+	
+    tools {
+        maven 'Maven 3.2.5'
+    }		
 
     stage('Test image') {
         
