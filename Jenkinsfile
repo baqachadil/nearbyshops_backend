@@ -11,11 +11,7 @@ node {
         /* This builds the actual image */
 
         app = docker.build("baqachadil/nearbyshops")
-    }
-	
-    tools {
-        maven 'Maven 3.2.5'
-    }		
+    }	    		
 
     stage('Test image') {
         
@@ -35,3 +31,6 @@ node {
                 echo "Trying to Push Docker Build to DockerHub"
     }
 }
+tools {
+        maven 'Maven 3.2.5'
+    }
