@@ -11,14 +11,20 @@
 	<groupId>com.example</groupId>
 	<artifactId>web_challenge_back_end</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>web_challenge_back_end</name>
+	<name>web_challenge_back_end-war</name>
 	<description>Web challenge</description>
+	<packaging>war</packaging>	
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-tomcat</artifactId>
+		    <version>2.2.2.RELEASE</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -70,6 +76,7 @@
 	</dependencies>
 
 	<build>
+	<finalName>nearshop</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
