@@ -1,4 +1,4 @@
 FROM openjdk:8
-ADD target/nearshop.war nearshop.war
-ENTRYPOINT ["java","-war","nearshop.war"]
+ADD target/nearshop.jar nearshop.jar
+ENTRYPOINT ["java","-jar","nearshop.jar"]
 EXPOSE 8086
